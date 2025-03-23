@@ -875,4 +875,137 @@
                     <div class="feature-card animate-fadein delay-4">
                         <div class="feature-icon">🎭</div>
                         <h3>مؤثرات وأجواء سينمائية</h3>
-                        <p>استم
+                        <p>استمتع بتجربة سينمائية حقيقية مع مؤثرات صوتية ومرئية تعزز أجواء المشاهدة.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="screenshots" class="screenshot-section">
+                <div class="screenshots-heading">
+                    <h2>لقطات شاشة</h2>
+                    <p class="section-subtitle">تصفح بعض اللقطات من تطبيق سينما النجوم</p>
+                </div>
+                
+                <div class="screenshot-container">
+                    <div class="screenshot">
+                        <img src="https://raw.githubusercontent.com/devabdeljalil/zoon/main/screenshots/screenshot1.jpg" alt="لقطة شاشة 1">
+                    </div>
+                    <div class="screenshot">
+                        <img src="https://raw.githubusercontent.com/devabdeljalil/zoon/main/screenshots/screenshot2.jpg" alt="لقطة شاشة 2">
+                    </div>
+                    <div class="screenshot">
+                        <img src="https://raw.githubusercontent.com/devabdeljalil/zoon/main/screenshots/screenshot3.jpg" alt="لقطة شاشة 3">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="download" class="download-section">
+                <div class="download-heading">
+                    <h2>حمل التطبيق الآن</h2>
+                    <p class="section-subtitle">انضم إلى مجتمع سينما النجوم واستمتع بتجربة مشاهدة لا تُنسى</p>
+                </div>
+                
+                <div class="qr-download">
+                    <div class="qr-code">
+                        <img src="https://raw.githubusercontent.com/devabdeljalil/zoon/main/qr-code.png" alt="رمز QR للتحميل">
+                    </div>
+                    <div class="or-divider">
+                        <span>أو</span>
+                    </div>
+                    <a href="https://devabdeljalil.github.io/zoon/app.apk" class="btn">
+                        <span class="btn-icon">⬇️</span>
+                        تحميل APK مباشرة
+                    </a>
+                </div>
+            </section>
+            
+            <section id="faq" class="faq-section">
+                <div class="faq-heading">
+                    <h2>الأسئلة الشائعة</h2>
+                    <p class="section-subtitle">إجابات على الأسئلة الأكثر شيوعًا حول تطبيق سينما النجوم</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        كيف يمكنني الانضمام إلى جلسة مشاهدة؟
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        يمكنك الانضمام إلى جلسة مشاهدة عن طريق إنشاء حساب جديد أو تسجيل الدخول، ثم اختيار غرفة مشاهدة أو إنشاء غرفة جديدة.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        هل التطبيق مجاني؟
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        نعم، تطبيق سينما النجوم مجاني بالكامل مع إمكانية الترقية إلى إصدار مميز للحصول على ميزات إضافية.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        هل يدعم التطبيق مشاهدة المحتوى المحلي؟
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        نعم، يدعم التطبيق مشاهدة المحتوى المحلي من جهازك مع أصدقائك.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#features">المميزات</a>
+                <a href="#screenshots">لقطات شاشة</a>
+                <a href="#download">تحميل</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">📘</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📸</a>
+            </div>
+            <p class="copyright">© 2023 سينما النجوم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript for star background
+        const stars = document.getElementById('stars');
+        const particles = document.getElementById('particles');
+        
+        function createStars() {
+            for (let i = 0; i < 200; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                stars.appendChild(star);
+            }
+        }
+        
+        function createParticles() {
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${Math.random() * 10 + 5}px`;
+                particle.style.height = particle.style.width;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
+                particles.appendChild(particle);
+            }
+        }
+        
+        createStars();
+        createParticles();
+    </script>
+</body>
+</html>
